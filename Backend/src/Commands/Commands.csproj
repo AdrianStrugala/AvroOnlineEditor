@@ -6,10 +6,10 @@
 
   <ItemGroup>
     <PackageReference Include="AvroConvert" Version="2.6.1" />
+    <PackageReference Include="MediatR" Version="8.1.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ConvertAvroToJson\" />
     <Folder Include="ConvertJsonToAvro\" />
   </ItemGroup>
 

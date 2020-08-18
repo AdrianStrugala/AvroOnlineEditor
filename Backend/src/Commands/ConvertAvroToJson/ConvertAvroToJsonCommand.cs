@@ -5,7 +5,7 @@ using MediatR;
 
 namespace Commands.ConvertAvroToJson
 {
-    public class ConvertAvroToJsonCommand : IRequest<string>
+    public class ConvertAvroToJsonCommand : IRequest<ConvertAvroToJsonResult>
     {
     }
 }
