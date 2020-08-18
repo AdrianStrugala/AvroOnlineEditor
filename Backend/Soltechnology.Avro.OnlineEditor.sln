@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Soltechnology.Avro.OnlineEditor.Api", "src\Soltechnology.Avro.OnlineEditor.Api\Soltechnology.Avro.OnlineEditor.Api.csproj", "{04350962-8440-4C0A-B053-2032BE5AA4B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commands", "src\Commands\Commands.csproj", "{0B9EB6FF-C443-48E9-B125-7836FF7AF6E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Commands", "src\Commands\Commands.csproj", "{0B9EB6FF-C443-48E9-B125-7836FF7AF6E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

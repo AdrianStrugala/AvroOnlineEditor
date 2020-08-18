@@ -8,4 +8,9 @@
     <PackageReference Include="AvroConvert" Version="2.6.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ConvertAvroToJson\" />
+    <Folder Include="ConvertJsonToAvro\" />
+  </ItemGroup>
+
 </Project>
