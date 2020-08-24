@@ -68,9 +68,9 @@ class Upload extends Component {
           const req = new XMLHttpRequest();
       
           const formData = new FormData();
-          formData.append("file", file, file.name);
+          formData.append("file", file);
       
-          req.open("POST", "http://localhost:8000/upload");
+          req.open("POST", "http://localhost:5000/conversion/x");
           req.send(formData);
         });
       }
@@ -87,7 +87,6 @@ class Upload extends Component {
                         />
                     </div>
                     <div className="Files">
-                        // Add this:
                         {this.state.files.map(file => {
                             return (
                                 <div key={file.name} className="Row">
@@ -97,9 +96,7 @@ class Upload extends Component {
                         })}
                     </div>
                 </div>
-                <div className="Actions">
-
-                </div>
+                <div className="Actions">{this.renderActions()}</div>
             </div>
         );
     }

@@ -49,6 +49,7 @@ class Dropzone extends Component {
     if (this.props.onFilesAdded) {
       const array = this.fileListToArray(files)
       this.props.onFilesAdded(array)
+      console.log("files added " + files)
     }
     this.setState({ hightlight: false })
   }

@@ -18,6 +18,19 @@ namespace SolTechnology.Avro.OnlineEditor.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy("cors",
+                builder =>
+                {
+                    builder.WithOrigins("http://localhost:3000",
+                               "https://dreamtravels.azurewebsites.net",
+                               "https://dreamtravels-demo.azurewebsites.net")
+                                        .AllowAnyHeader()
+                                        .AllowAnyMethod()
+                                        .AllowCredentials();
+                });
+            });
             services.AddControllers();
         }
 
